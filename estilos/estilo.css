@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cuerpo{
+    background-color: rgba(160, 187, 125, 0.923);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+}
+
+main{
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+main img {
+    grid-column: span 6;
+    width: 100%;
+    border-radius: 6px;
+}
+
+
+main .principal{
+    grid-column: 8 / span 5;
+}
+
+main > h2{
+    grid-column: span 12;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 20px;
+}
+
+main .beneficios{
+    grid-column: span 4;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 960px) {
+    main img {
+        grid-column: 2 / span 10;
+    }
+    main .principal {
+        grid-column: 3 / span 8;
+        text-align: center;
+    }
+    main .beneficios {
+        grid-column: 3 / span 8;
+    }
+    
+
+}
+
+
+.navBar{
+    width: 100%;
+    padding-right: 150px;
+    background-image: linear-gradient(to right, #de6262 , #ffb88c);
+    border-radius: 5px;
+    }
+    
+footer{
+    padding: 5px;
+    margin: 0px;
+    background-color: rgb(8, 8, 104);
+    text-align: center;
+    color: aliceblue;
+}
+
+.redes{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    background-color: rgb(8, 8, 104);
+}
+
+
+.formulario{
+    width: 400px;
+    background-color: rgb(8, 8, 104);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    text-align: left;
+    box-shadow: 5px 15px 35px #000;
+}
+
+.formulario h4{
+    font-size: 25px;
+    margin-bottom: 30px;
+
+}
+
+.control{
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(250, 131, 51);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+
+.boton{
+    width: 100%;
+    background-color: rgb(250, 131, 51);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    margin: 15px 0;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    margin-left: 35%;
+} 
+
+table{
+    color: #fff;
+    font-size: 15px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 2px solid white;
+    
+}
+
+thead{
+    background-color: rgb(3, 79, 79);
+    border: 2px solid white;
+}
+
+th{
+    padding: 10px 5px;
+    font-weight: 500;
+}
+
+td{
+    padding: 15px;
+    border-bottom: solid 2px white;
+}
+
+tbody tr{
+    background-color: rgb(196, 138, 80);
+}
+
+.pieEstadistica{
+    margin-top: 525px;
+}
+
+.campos:hover{
+    transform: scale(1.2);
+    transition-property: all;
+    transition-duration: 3s;
+}
+
+.slide{
+    margin-top: 0px;
+}
+
+.slide img{
+    height: 80vh;
+}
